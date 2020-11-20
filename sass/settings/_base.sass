@@ -1,0 +1,53 @@
+html, body
+	margin: 0
+	padding: 0
+	height: 100%
+	width: 100%
+
+body
+	font-size: rem(18px)
+	font-family: $font_default
+
+h1,h2,h3,h4,h5,h6
+	font-family: $font_bold
+
+.wrapper
+	position: relative
+	overflow: hidden
+	min-height: 100%
+
+.container
+	margin: 0 auto
+	max-width: 1170px
+	padding: 0.1rem
+	box-sizing: border-box
+
+.btn
+	padding: 11px 39px
+	background: linear-gradient(to right, #FE6201, #ED4B7C)
+	border: none
+	color: #ffffff
+	font-size: 1rem
+	text-transform: uppercase
+	border-radius: 24px
+	font-weight: 700
+	text-decoration: none
+
+%flex_center
+	display: flex
+	justify-content: center
+	align-items: center
+
+%flex_space-evenly
+	display: flex
+	align-items: center
+	justify-content: space-evenly
+
+%btn_purple
+	padding: 10px 38px
+	background: #3D2B99
+	color: #ffffff
+	box-shadow: 0px 8px 12px rgba(61, 43, 153, 0.3)
+	border-radius: 8px
+	text-decoration: none
+	font-weight: bold
