@@ -1,10 +1,12 @@
 .topics__container
-  z-index: 2
-.topics
-  @extend %flex_space-evenly
+  display: flex
+  align-items: center
+  justify-content: space-around
   min-height: rem(171px)
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1)
   margin-top: rem(70px)
+  position: relative
+  z-index: 10
 
 .topics__title__wrap
   max-width: rem(250px)
@@ -15,6 +17,11 @@
 
 .topics__link
   @extend %btn_purple
+  margin-left: 40px
+
 
 .topics__striped
-  margin: -95px 0  0 90px
+  position: absolute
+  left: -70px
+  bottom: -70px
+  z-index: -1
