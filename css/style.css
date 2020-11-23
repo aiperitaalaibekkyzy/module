@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-.comment__title, .contents__cards__title, .info__headline {
+.teachers__title, .comment__title, .contents__cards__title, .info__headline {
   font-size: 42px;
   color: #2B283A;
   font-weight: normal;
@@ -401,29 +401,33 @@ ul {
 }
 
 .comment {
+  position: relative;
   margin-top: 178px;
+}
+
+.comment__container {
+  display: flex;
 }
 
 .comment__title__wrap {
   min-height: 13.0625rem;
-  width: 100%;
+  width: 50%;
+  left: 0;
   background: #F1F3F6;
   position: absolute;
   z-index: -1;
-  left: -735px;
   border-radius: 12px;
 }
 
 .comment__title {
   position: relative;
-  margin-left: 55%;
-  width: 21.625rem;
-  margin: 3.7% 0 3.6% 60%;
+  flex-basis: 35%;
+  margin-right: 2rem;
 }
 
 .comment__block {
   height: 18.6875rem;
-  width: 48.125rem;
+  flex-basis: 65%;
   box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background: #ffffff;
@@ -436,7 +440,7 @@ ul {
 }
 
 .comment__pic {
-  margin: -50px 44% auto 44%;
+  margin: -60px 44% auto 44%;
 }
 
 .icon {
@@ -465,6 +469,63 @@ ul {
   position: relative;
   font-weight: normal;
   margin-left: 92%;
+}
+
+.teachers {
+  margin-top: 5.625rem;
+}
+
+.teachers__title {
+  padding: 3.125rem 0 9.375rem;
+  background-image: url(../img/Children.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}
+
+.teachers_cards-block {
+  display: flex;
+  margin-top: -140px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .teachers_cards-block {
+    display: block;
+  }
+}
+
+.teacher__card {
+  flex: 1 1 23%;
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .teacher__card {
+    flex: 1 1 40%;
+  }
+}
+
+.teacher__pic {
+  position: absolute;
+  top: 30px;
+  left: 53%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 480px) {
+  .teacher__pic {
+    left: 52%;
+  }
+}
+
+.teacher__caption {
+  color: #2B283A;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.teacher__subtitle {
+  color: #777777;
 }
 
 /*# sourceMappingURL=style.css.map */

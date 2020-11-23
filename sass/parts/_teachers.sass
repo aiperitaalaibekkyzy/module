@@ -1,0 +1,45 @@
+.teachers
+  margin-top: rem(90px)
+
+.teachers__title
+  padding: rem(50px) 0 rem(150px)
+  background-image: url(../img/Children.png)
+  background-repeat: no-repeat
+  background-size: cover
+  text-align: center
+  @extend %block__title
+  color: #ffffff
+
+.teachers_cards-block
+  display: flex
+  margin-top: -140px
+  flex-wrap: wrap
+  @media screen and ( max-width: 480px)
+    display: block
+
+
+.teacher__card
+  flex: 1 1 23%
+  position: relative
+  text-align: center
+
+  @media screen and ( max-width: 768px)
+    flex: 1 1 40%
+  
+    
+
+.teacher__pic
+  position: absolute
+  top: 30px
+  left: 53%
+  transform: translateX(-50%)
+  @media screen and ( max-width: 480px)
+    left: 52%
+
+.teacher__caption
+  color: #2B283A
+  margin-bottom: 5px
+  font-size: 24px
+
+.teacher__subtitle
+  color: #777777
