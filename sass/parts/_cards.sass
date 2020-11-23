@@ -5,35 +5,46 @@
   z-index: -2
   position: absolute
   margin: 153px auto
+
+.contents__cards__title
+  @extend %block__title
+  text-align: center
 .cards__wrap
   width: 100%
   height: 100%
   box-sizing: border-box
-  margin-top: rem(270px)
+  margin-top: rem(278px)
   @extend %flex_space-between
+
 .card
   width: rem(370px)
   height: rem(441px)
   padding: 40px
-  background: linear-gradient(34.87deg, #4776E6 1.22%, #8E54E9 97.88%)
+  background: linear-gradient(90deg, #ADD100 0%, #7B920A 100%)
   color: #ffffff
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3)
   border-radius: 24px
   margin-right: 30px
+  &:first-child
+    background: linear-gradient(34.87deg, #4776E6 1.22%, #8E54E9 97.88%)
   &:last-child
     margin-right: 0
+    background: linear-gradient(33.88deg, #FE6201 6.73%, #ED4B7C 96.13%)
+
 .card__title
   font-size: 24px
   font-weight: bolder
 .card__title, .card__desc
   text-align: center
+.card__desc
+  margin: 30px auto
 .card__list
   margin: 22px 0
 
 ul
   list-style: none
   position: relative
-li:before
+.card__list:before
   content: ''
   position: absolute
   height: 2px
@@ -41,4 +52,17 @@ li:before
   background: #ffffff
   margin: 12px 0
   left: 6px
+
+.card__icon
+  height: 16px
+  width: 16px
+  background: #ffffff00
+  border-radius: 30px
+
+.icon-Arrow
+  font-size: 30px
+  color: #000
+  height: 20px
+  width: 20px
+
 
