@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.legend {
+.newsletter__container, .legend {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -526,6 +526,32 @@ ul {
 
 .teacher__subtitle {
   color: #777777;
+}
+
+.newsletter {
+  margin-top: 8.6875rem;
+  z-index: 1;
+}
+
+.newsletter__container {
+  background: linear-gradient(90.06deg, #FE6201 0.05%, #ED4B7C 99.94%);
+  border-radius: 8px;
+  height: 10.75rem;
+}
+
+.newsletter__title {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.form__input {
+  padding: 15px 25px;
+  background: none;
+  border-radius: 28px;
+  border: 1px solid #ffffff;
+  width: 25.25rem;
+  font-size: 18px;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
