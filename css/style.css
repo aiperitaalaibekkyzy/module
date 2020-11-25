@@ -95,7 +95,7 @@ body {
   font-family: "Roboto";
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   font-family: "Roboto-Bold";
 }
 
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url(../img/header-img.png);
   background-repeat: no-repeat;
   background-position: right top;
-  min-height: 90vh;
+  height: 675px;
   position: relative;
 }
 .header-container {
@@ -443,10 +443,6 @@ ul {
   margin: -60px 44% auto 44%;
 }
 
-.icon {
-  margin: 28px 0 22px;
-}
-
 .icon-left-quotes, .icon-right-quotes {
   color: #FE6201;
   position: relative;
@@ -522,6 +518,7 @@ ul {
   color: #2B283A;
   margin-bottom: 5px;
   font-size: 24px;
+  font-family: "Roboto-Bold";
 }
 
 .teacher__subtitle {
@@ -530,7 +527,8 @@ ul {
 
 .newsletter {
   margin-top: 8.6875rem;
-  z-index: 1;
+  bottom: -74px;
+  position: relative;
 }
 
 .newsletter__container {
@@ -552,6 +550,70 @@ ul {
   width: 25.25rem;
   font-size: 18px;
   color: #ffffff;
+}
+
+.footer {
+  background: #F1F3F6;
+  height: 21.375rem;
+  padding: 108px 0 59px;
+}
+.footer ul, .footer span.email, .footer span.address {
+  color: #7D7D7D;
+}
+.footer i {
+  font-size: 25px;
+}
+.footer h3 {
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: top;
+}
+
+.list__item {
+  padding-left: 0;
+}
+
+.list {
+  margin-bottom: 20px;
+  left: 0;
+}
+.list:last-child {
+  margin-bottom: 0;
+}
+
+.contact-details {
+  width: 20rem;
+}
+
+.email__warp, .address__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.email__wrap {
+  margin-bottom: 25px;
+}
+
+.email, .address {
+  font-size: 16px;
+}
+
+.icon-Mail, .icon-Location {
+  vertical-align: bottom;
+}
+
+.icon-Location {
+  margin-right: 10px;
+}
+
+.social__nav__wrap i {
+  margin-right: 29px;
 }
 
 /*# sourceMappingURL=style.css.map */
