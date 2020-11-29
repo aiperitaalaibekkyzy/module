@@ -1,12 +1,31 @@
 .header
-  background-image: url(../img/header-img.png)
-  background-repeat: no-repeat
-  background-position: right top
+  // background-image: url(../img/header-img.png)
+  // background-repeat: no-repeat
+  // background-position: right top
   height: 675px
   position: relative
+  background-size: 35%
+
+  &__img-wrap
+    position: absolute
+    right: 0
+    top: 0
+    width: 35vw
+
+    &::before
+      top: 30%
+      transform: translateY(-50%)
+    &::after
+      top: 70%
+      transform: translateY(-50%)
+  
+  &__img
+    width: 100%
 
   &-container
     margin-top: 0
+    position: relative
+    z-index: 3
   
   &__top
     margin: 0 auto 34px
@@ -64,13 +83,8 @@
   color: #6B6B6B
   margin-bottom: 44px
 
-.striped
-  width: 155px
-  height: 155px
-  background: radial-gradient(orangered 2px, transparent 2px, transparent 4px)
-  background-size: 20px 20px
-  position: absolute
-  z-index: -2
+
+
 .header__striped
   margin: 40px 600px 0 568px
 .header__striped2

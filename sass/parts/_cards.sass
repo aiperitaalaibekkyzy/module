@@ -4,7 +4,7 @@
   height: rem(263px)
   z-index: -2
   position: absolute
-  margin: 153px auto
+  margin: -140px auto
 
 .contents__cards__title
   @extend %block__title
@@ -25,11 +25,15 @@
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3)
   border-radius: 24px
   margin-right: 30px
+  position: relative
   &:first-child
     background: linear-gradient(34.87deg, #4776E6 1.22%, #8E54E9 97.88%)
   &:last-child
     margin-right: 0
     background: linear-gradient(33.88deg, #FE6201 6.73%, #ED4B7C 96.13%)
+  &::before
+    top: -40px
+    left: -80px
 
 .card__title
   font-size: 24px
@@ -54,14 +58,15 @@ ul
   left: 6px
 
 .card__icon
-  height: 16px
-  width: 16px
-  background: #ffffff00
+  display: inline-block
+  // height: 16px
+  // width: 16px
+  background: #ffffffd0
   border-radius: 30px
+  margin: auto
 
 .icon-Arrow
-  font-size: 30px
-  color: #000
+  font-size: 50px
   height: 20px
   width: 20px
 

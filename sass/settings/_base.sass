@@ -19,7 +19,7 @@ h1,h2,h4,h5,h6
 .container
 	margin: 0 auto
 	max-width: 1170px
-	padding: 0.1rem
+	padding: 0 .5rem
 	box-sizing: border-box
 
 .btn
@@ -67,3 +67,17 @@ h1,h2,h4,h5,h6
 	color: #2B283A
 	font-weight: normal
 
+.striped-left:before,
+.striped-right:after
+	content: ''
+	width: 155px
+	height: 155px
+	background: radial-gradient(orangered 2px, transparent 2px, transparent 4px)
+	background-size: 20px 20px
+	position: absolute
+	z-index: -2
+
+.striped-left:before
+	left: -50px
+.striped-right:after
+	right: -50px
