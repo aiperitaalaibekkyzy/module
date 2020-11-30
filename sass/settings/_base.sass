@@ -1,3 +1,6 @@
+*
+	outline: none
+
 html, body
 	margin: 0
 	padding: 0
@@ -10,11 +13,13 @@ body
 
 h1,h2,h4,h5,h6
 	font-family: $font_bold
-
 .wrapper
 	position: relative
 	overflow: hidden
 	min-height: 100%
+
+.no-scroll
+	overflow: hidden
 
 .container
 	margin: 0 auto
@@ -81,3 +86,6 @@ h1,h2,h4,h5,h6
 	left: -50px
 .striped-right:after
 	right: -50px
+
+.header__menu
+	display: none

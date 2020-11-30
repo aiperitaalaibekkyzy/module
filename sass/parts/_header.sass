@@ -1,10 +1,6 @@
 .header
-  // background-image: url(../img/header-img.png)
-  // background-repeat: no-repeat
-  // background-position: right top
-  height: 675px
+  padding-bottom: 2rem
   position: relative
-  background-size: 35%
 
   &__img-wrap
     position: absolute
@@ -61,7 +57,7 @@
   font-weight: 700
   color: #6D6D6D
   margin-left: 35px
-  transition: .6s
+  transition: .4s
   &:first-child
     margin-left: 0
   &:hover
@@ -69,7 +65,8 @@
 
 .header__info
   max-width: 532px
-  margin-top: 150px
+  padding-top: 100px
+  margin-top: 50px
 
 .info__title__wrap
   max-width: 380px
@@ -83,11 +80,64 @@
   color: #6B6B6B
   margin-bottom: 44px
 
-
-
 .header__striped
   margin: 40px 600px 0 568px
 .header__striped2
   margin: 318px 0 0 1115px
 
-
+@media screen and ( max-width: 992px )
+  .header__top
+    background: #fff
+    z-index: 20
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1)
+    padding: 20px
+  .header__dropMenu
+    position: fixed
+    display: flex
+    flex-direction: column
+    top: -100%
+    transition: .6s all
+    right: 0
+    justify-content: center
+    text-align: center
+    left: 0
+    z-index: -1
+    height: 100%
+    background: #fff
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
+    box-sizing: border-box
+  .top__nav
+    display: none
+  .nav__btn
+    display: none
+  .hamburger, .hamburger--collapse
+    outline: none
+    color: #333333
+    border: none
+  .header__menu
+    outline: none
+    display: block
+  .nav__link
+    text-align: center
+    margin-left: 0
+    font-size: 24px
+  .menu-active
+    top: 0
+  .topics__link
+    margin-left: 7px
+  .legend
+    display: block
+    justify-content: center
+    margin: 0 auto
+    height: auto
+    &__info
+      max-width: 100%
+      text-align: center
+    &__item
+      max-width: 100%
+      text-align: center
+      background-repeat: no-repeat

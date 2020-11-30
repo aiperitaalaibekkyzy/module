@@ -6,6 +6,8 @@
     <title>Online Learning</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="./node_modules/hamburgers/dist/hamburgers.css"/>
+    <link rel="stylesheet" href="./node_modules/hamburgers/dist/hamburgers.min.css"/>
   </head>
   <body>
     <div class="wrapper">
@@ -17,6 +19,12 @@
             </div>
             <nav class="top__nav"><a class="nav__link" href="#">Home</a><a class="nav__link" href="#">Categories</a><a class="nav__link" href="#">Buy course</a><a class="nav__link" href="#">Contact Us</a></nav>
             <button class="btn nav__btn">Login</button>
+            <div class="header__menu">
+              <button class="hamburger hamburger--collapse" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+              <div class="header__dropMenu"><a class="nav__link" href="#">Home</a><a class="nav__link" href="#">Categories</a><a class="nav__link" href="#">Buy course</a><a class="nav__link" href="#">Contact Us</a>
+                <button class="btn nav__btn">Login</button>
+              </div>
+            </div>
           </div>
           <div class="header__info">
             <div class="info__title__wrap">
@@ -67,7 +75,7 @@
                 <li class="card__list">SSC General Duty Exam</li>
                 <li class="card__list">SSC Junior Engineer Exam</li>
                 <li class="card__list">SSC Multi-Tasking Staff Exam</li>
-              </ul><span class="card__icon"><i class="icon-Arrow"></i></span>
+              </ul><span class="card__icon"><i class="icon-white-arrow"></i></span>
             </div>
             <div class="card">
               <div class="card__title">Bank Exams</div>
@@ -75,16 +83,16 @@
               <ul class="card__list-item">
                 <li class="card__list">SBI Probationary Officers</li>
                 <li class="card__list">RBI Oficer Grade Exam</li>
-                <li class="card__list">IBPS PO Preliminary Exam</li>
+                <li class="card__list">IBPS PO Preliminary Exam</li><span class="card__icon"></span><i class="icon-white-arrow"></i>
               </ul>
             </div>
             <div class="card">
               <div class="card__title">UPSC CSE</div>
-              <div class="card__desc">The Civil Services Examination is a nationwide competitive examination in India conducted by the Union Public Service Commission.</div>
+              <div class="card__desc">The Civil Services Exam in India is a nationwide competitive examination conducted by the Union Public Service Commission.</div>
               <ul class="card__list-item">
-                <li class="card__list">Lorem ipsum dolor sit amet</li>
-                <li class="card__list">Dolor sit amet, consect</li>
-                <li class="card__list">liquam, purus sit amet luctus</li>
+                <li class="card__list">UPSC Prelims</li>
+                <li class="card__list">UPSC Mains</li>
+                <li class="card__list">UPSC Personality Test</li><span class="card__icon"></span><i class="icon-white-arrow"></i>
               </ul>
             </div>
           </div>
@@ -126,7 +134,10 @@
           <h2 class="newsletter__title">Subscribe for newsletter</h2>
           <div class="newsletter__form">
             <label class="form__label" for="newsletter-email-input"></label>
-            <input class="form__input" id="newsletter-email-input" type="email" placeholder="Enter email address"/>
+            <div class="mewsLetter__input">
+              <input class="form__input" id="newsletter-email-input" type="email" placeholder="Enter email address"/>
+              <button><i class="icon-white-arrow"></i></button>
+            </div>
           </div>
         </div>
       </section>
@@ -162,5 +173,7 @@
         </div>
       </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
