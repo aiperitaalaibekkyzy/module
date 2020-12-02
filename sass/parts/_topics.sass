@@ -19,14 +19,15 @@
   color: #2b283a
 .topics__links
   width: 70%
-  display: flex
-  flex-wrap: wrap
+  // display: flex
+  box-sizing: border-box
 
 .topics__link
   @extend %btn_purple
-  margin-left: 40px
   white-space: nowrap
   text-align: center
+  display: inline-block
+  margin: 20px 20px
 
 .topics__striped
   position: absolute
@@ -34,14 +35,28 @@
   bottom: -70px
   z-index: -1
 
-@media screen and ( max-width:  1062px)
+@media screen and ( max-width:  1150px)
   .topics__container
-    flex-wrap: wrap
+    display: inline-block
+    width: 100%
+    height: rem(200px)
 
   .topics__title__wrap
     max-width: 100%
-@media screen and ( max-width:  896px)
-  .topics__container
-    height: 190px
+    margin: 10px auto
+    text-align: center
+
+  .topics__links
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 1rem
+    width: 60%
+    margin: auto
   .topics__link
-    flex: 1 1 40%
+    margin: 0
+    align-items: center
+@media screen and ( max-width: 575px)
+  .topics__container
+    height: rem(330px)
+  .topics__link
+    grid-column: span 2

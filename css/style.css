@@ -143,7 +143,7 @@ h1, h2, h4, h5, h6 {
   align-items: center;
 }
 
-.newsletter__container, .legend {
+.newsletter__container, .legend__container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -353,22 +353,6 @@ h1, h2, h4, h5, h6 {
   .topics__link {
     margin-left: 7px;
   }
-
-  .legend {
-    display: block;
-    justify-content: center;
-    margin: 0 auto;
-    height: auto;
-  }
-  .legend__info {
-    max-width: 100%;
-    text-align: center;
-  }
-  .legend__item {
-    max-width: 100%;
-    text-align: center;
-    background-repeat: no-repeat;
-  }
 }
 .topics__container {
   display: flex;
@@ -396,14 +380,14 @@ h1, h2, h4, h5, h6 {
 
 .topics__links {
   width: 70%;
-  display: flex;
-  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .topics__link {
-  margin-left: 40px;
   white-space: nowrap;
   text-align: center;
+  display: inline-block;
+  margin: 20px 20px;
 }
 
 .topics__striped {
@@ -413,25 +397,42 @@ h1, h2, h4, h5, h6 {
   z-index: -1;
 }
 
-@media screen and (max-width: 1062px) {
+@media screen and (max-width: 1150px) {
   .topics__container {
-    flex-wrap: wrap;
+    display: inline-block;
+    width: 100%;
+    height: 12.5rem;
   }
 
   .topics__title__wrap {
     max-width: 100%;
+    margin: 10px auto;
+    text-align: center;
   }
-}
-@media screen and (max-width: 896px) {
-  .topics__container {
-    height: 190px;
+
+  .topics__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 60%;
+    margin: auto;
   }
 
   .topics__link {
-    flex: 1 1 40%;
+    margin: 0;
+    align-items: center;
   }
 }
-.legend {
+@media screen and (max-width: 575px) {
+  .topics__container {
+    height: 20.625rem;
+  }
+
+  .topics__link {
+    grid-column: span 2;
+  }
+}
+.legend__container {
   height: 400px;
   margin-top: 100px;
 }
@@ -441,6 +442,7 @@ h1, h2, h4, h5, h6 {
 }
 
 .legend__item {
+  border-radius: 4px;
   background-image: url(../img/doc.png);
   height: 18.4375rem;
   width: 23.125rem;
@@ -471,6 +473,34 @@ h1, h2, h4, h5, h6 {
   bottom: -35px;
 }
 
+@media screen and (max-width: 1120px) {
+  .legend__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px auto;
+    height: auto;
+  }
+
+  .legend__info {
+    flex: 1 0 100%;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .legend__item {
+    background-size: cover;
+    background-position: bottom;
+    flex: 1 0 45%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 25px auto;
+    background-repeat: no-repeat;
+  }
+
+  .item__text {
+    margin: auto;
+  }
+}
 .cards__header {
   background: #F1F3F6;
   width: 100%;
