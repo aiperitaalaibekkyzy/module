@@ -343,7 +343,11 @@ h1, h2, h4, h5, h6 {
   .nav__link {
     text-align: center;
     margin-left: 0;
+    margin-bottom: 25px;
     font-size: 24px;
+  }
+  .nav__link:hover {
+    font-size: 28px;
   }
 
   .menu-active {
@@ -610,10 +614,16 @@ ul {
   left: 6px;
 }
 
+.card__icon__wrap {
+  margin: 48px auto 5px;
+  width: 50px;
+}
+
 .icon-white-arrow {
-  font-size: 40px;
+  font-size: 48px;
   height: 20px;
   width: 20px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -742,6 +752,7 @@ ul {
 @media screen and (max-width: 768px) {
   .teacher__card {
     flex: 1 1 40%;
+    margin-bottom: 28px;
   }
 }
 
@@ -777,7 +788,8 @@ ul {
 .newsletter__container {
   background: linear-gradient(90.06deg, #FE6201 0.05%, #ED4B7C 99.94%);
   border-radius: 8px;
-  height: 10.75rem;
+  padding: 50px 20px;
+  flex-wrap: wrap;
   position: relative;
 }
 .newsletter__container:before {
@@ -788,9 +800,10 @@ ul {
 .newsletter__title {
   color: #ffffff;
   font-size: 32px;
+  text-align: center;
 }
 
-.mewsLetter__input {
+.newsLetter__input {
   width: 404px;
   height: 50px;
   display: flex;
@@ -800,7 +813,7 @@ ul {
   border-radius: 28px;
   border: 1px solid #ffffff;
 }
-.mewsLetter__input button {
+.newsLetter__input button {
   background: none;
   border: none;
   cursor: pointer;
@@ -808,7 +821,7 @@ ul {
 
 .form__input {
   width: 400px;
-  padding: 15px 25px;
+  padding: 15px 0 15px 25px;
   background: none;
   border: none;
   font-size: 18px;
@@ -819,6 +832,11 @@ ul {
   opacity: 0.5;
 }
 
+@media screen and (max-width: 450px) {
+  .newsLetter__input {
+    width: 300px;
+  }
+}
 .footer {
   background: #F1F3F6;
   height: 21.375rem;
@@ -829,6 +847,12 @@ ul {
 }
 .footer i {
   font-size: 25px;
+  transition: 0.4s;
+}
+.footer i:hover {
+  font-size: 30px;
+  cursor: pointer;
+  text-shadow: 0px 0px 45px rgba(0, 0, 0, 0.4);
 }
 .footer h3 {
   font-weight: lighter;
@@ -837,6 +861,7 @@ ul {
 
 .footer__container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   vertical-align: top;
 }
@@ -846,8 +871,14 @@ ul {
 }
 
 .list {
-  margin-bottom: 20px;
+  margin: 20px;
   left: 0;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.list:hover {
+  font-size: 20px;
+  color: #252525;
 }
 .list:last-child {
   margin-bottom: 0;
@@ -880,7 +911,31 @@ ul {
 }
 
 .social__nav__wrap i {
-  margin-right: 29px;
+  margin: 10px 12px;
+}
+
+@media screen and (max-width: 960px) {
+  .footer {
+    text-align: center;
+  }
+  .footer li {
+    display: inline;
+    margin: 12px;
+  }
+
+  .footer__list {
+    flex: 1 1 80%;
+  }
+
+  .contact-details {
+    text-align: center;
+    margin: auto;
+  }
+
+  .social__nav {
+    flex: 1 1 80%;
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

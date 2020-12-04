@@ -6,8 +6,9 @@
 .newsletter__container
   background: linear-gradient(90.06deg, #FE6201 0.05%, #ED4B7C 99.94%)
   border-radius: 8px
-  height: rem(172px)
+  padding: 50px 20px
   @extend %flex_space-evenly
+  flex-wrap: wrap
   position: relative
   &:before
     top:-80px
@@ -16,7 +17,8 @@
 .newsletter__title
   color: #ffffff
   font-size: 32px
-.mewsLetter__input
+  text-align: center
+.newsLetter__input
   width: 404px
   height: 50px
   display: flex
@@ -31,7 +33,7 @@
     cursor: pointer
 .form__input
   width: 400px
-  padding: 15px 25px
+  padding: 15px 0 15px 25px
   background: none
   border: none
   font-size: 18px
@@ -39,3 +41,8 @@
   &::placeholder
     color: #ffffff
     opacity: .5
+  
+@media screen and ( max-width:  450px)
+  .newsLetter__input
+    width: 300px
+  
