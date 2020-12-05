@@ -4,4 +4,5 @@ $(document).ready(function () {
         $('.header__dropMenu').toggleClass('menu-active');
         $('body').toggleClass('no-scroll')
     });
- });
+    new Swiper('')
+    });
